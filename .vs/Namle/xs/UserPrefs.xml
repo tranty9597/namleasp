@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{FC895233-4D96-4E5E-9A70-F9F1C274A52D}|Default">
+  <MonoDevelop.Ide.ItemProperties.Namle PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Namle/AbcModel.cs">
+    <Files>
+      <File FileName="Namle/Program.cs" Line="17" Column="38" />
+      <File FileName="Namle/AbcModel.cs" Line="15" Column="28" />
+      <File FileName="Namle/ResultModel.cs" Line="13" Column="27" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Namle" expanded="True">
+            <Node name="Namle" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+                <Node name="SdkDependencies" expanded="True" />
+              </Node>
+              <Node name="AbcModel.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
