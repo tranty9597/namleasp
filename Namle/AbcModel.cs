@@ -10,7 +10,12 @@ namespace Namle
 
         public string c;
 
- 
+
+        public AbcModel(){
+
+            a = b = c = "Not Found!";
+
+        }
 
         public AbcModel(string a, String b, String c)
         {
@@ -19,9 +24,9 @@ namespace Namle
             this.c = c;
         }
 
-        public String toString()
+        public string toString()
         {
-            return a +"/n" + b + "/n" + c;
+            return "a = " + a +"\nb = " + b + "\nc = " + c;
         }
 
     }

@@ -2,9 +2,9 @@
   <MonoDevelop.Ide.ItemProperties.Namle PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Namle/AbcModel.cs">
     <Files>
-      <File FileName="Namle/Program.cs" Line="17" Column="38" />
-      <File FileName="Namle/AbcModel.cs" Line="15" Column="28" />
-      <File FileName="Namle/ResultModel.cs" Line="13" Column="27" />
+      <File FileName="Namle/Program.cs" Line="22" Column="43" />
+      <File FileName="Namle/AbcModel.cs" Line="21" Column="10" />
+      <File FileName="Namle/ResultModel.cs" Line="18" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

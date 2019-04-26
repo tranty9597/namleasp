@@ -7,6 +7,13 @@ namespace Namle
 
         public AbcModel value;
 
+        Object error;
+
+        public ResultModel() {
+            success = false;
+            value = new AbcModel();
+        }
+
         public ResultModel(bool success, AbcModel value)
         {
             this.success = success;

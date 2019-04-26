@@ -10,7 +10,8 @@ namespace Namle
     class Program
 
     {
-   
+
+        static String BASE_URL = "https://namle.tranty9597.now.sh/api/casps";
 
         static void Main(string[] args)
         {
@@ -24,7 +25,7 @@ namespace Namle
 
         static String CreateAbc(AbcModel model)
         {
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create("https://namle.tranty9597.now.sh/api/casps/addValue");
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(BASE_URL + "/addValue");
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = "POST";
 
@@ -51,7 +52,7 @@ namespace Namle
 
         static AbcModel GetAbc(string path)
         {
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create("https://namle.tranty9597.now.sh/api/casps/getValue?a=" + path);
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create(BASE_URL + "/getValue?a=" + path);
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = "GET";
 
@@ -59,11 +60,18 @@ namespace Namle
 
             using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
             {
-                String result = streamReader.ReadToEnd();
+                string result = streamReader.ReadToEnd();
 
-                ResultModel res = JsonConvert.DeserializeObject<ResultModel>(result);
+                try
+                {
+                    ResultModel res = JsonConvert.DeserializeObject<ResultModel>(result);
 
-                return res.value;
+                    return res.value ?? new AbcModel();
+                }catch(Exception ex)
+                {
+                    return new AbcModel("error", "error", ex.ToString());
+                }
+              
             }
         }
     }
